@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">31-Notify</string>
+    <string name="calculator"><u>Android Tip Calculator</u></string>
+    <string name="channel_name">XYZ</string>
+    <string name="channel_description">For Your Enjoyment</string>
+
+</resources>
