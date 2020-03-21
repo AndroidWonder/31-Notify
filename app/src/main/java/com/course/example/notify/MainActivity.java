@@ -2,15 +2,11 @@ package com.course.example.notify;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         // Create an explicit intent for an Activity
         Intent intent = new Intent(this, Widgets.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-  
+
+        //the pending intent will outlive this app
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 9, intent,0 );
 
         builder = new NotificationCompat.Builder(this, CHANNEL_ID)
