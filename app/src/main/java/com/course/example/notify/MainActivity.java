@@ -15,8 +15,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private NotificationManager NotificationManager;
     private NotificationCompat.Builder builder = null;
-    private String textTitle = "Simple Notification Example";
-    private String textContent = "Get back to Application by clicking me";
     private int SIMPLE_NOTFICATION_ID = 25;
     private String CHANNEL_ID = "11";
 
