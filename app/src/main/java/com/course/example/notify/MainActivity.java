@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 ANDROID_CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
         // Sets whether notifications posted to this channel should display notification lights
         androidChannel.enableLights(true);
+        androidChannel.setVibrationPattern(new long[] { 100, 100 });
         // Sets whether notification posted to this channel should vibrate.
         //Needs permission in Manifest
         androidChannel.enableVibration(true);
