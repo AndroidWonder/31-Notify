@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // Sets whether notifications posted to this channel should display notification lights
         androidChannel.enableLights(true);
         // Sets whether notification posted to this channel should vibrate.
+        //Needs permission in Manifest
         androidChannel.enableVibration(true);
         // Sets the notification light color for notifications posted to this channel
         androidChannel.setLightColor(Color.GREEN);
