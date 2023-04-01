@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         //create Intent and PendingIntent
         Intent intent = new Intent(this, Widgets.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent,0);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent,PendingIntent.FLAG_IMMUTABLE);
 
         //create notification
         final Notification.Builder nb = new Notification.Builder(getApplicationContext(), ANDROID_CHANNEL_ID)
