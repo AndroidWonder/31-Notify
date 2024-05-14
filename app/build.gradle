@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.course.example.notify"
         minSdkVersion 26
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -15,8 +15,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+	namespace="com.course.example.notify"
     }
-    buildToolsVersion '33.0.1'
+
 }
 
 dependencies {
